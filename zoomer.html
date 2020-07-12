@@ -1,0 +1,748 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Zoomer</title>
+        <link rel="shortcut icon" href="/img/Logo.png" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        *,html{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+
+        }
+        body{
+            min-width: 1300px;
+        }
+       #sum{
+            position: sticky;
+            top: 0;
+           z-index: 1;
+        }
+        #header{
+            background-color: #070706;
+            height: 50px;
+            width: 100%;
+            line-height: 50px;
+        }
+        #header p{
+            float: left;
+            color: white;
+            margin-left: 80px;
+        }
+        #header div{
+            float: right;
+            margin-right: 30px;
+            position: relative;
+        }
+        #header div a {
+            margin-left: 30px;
+            color: white;
+            text-decoration: none;
+            
+        }
+        #header div input
+         {
+            margin-right:-5px; 
+             border: none;
+        }
+        .one{
+            padding: 5px;
+        }
+        .ones{
+            background-color:#C4C4C4;
+            border:none;
+           
+            
+        }
+        #one:hover{
+            color: #F8CA00;
+        }
+        
+        #hedertop img,#hedertop ul {
+           vertical-align: middle;
+            display: inline-block;
+        }
+        a{  
+            text-decoration: none;
+            color: inherit;
+        }
+        #hedertop ul{
+            position:absolute;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #hedertop ul li{ 
+            float: left;
+            list-style: none;
+            
+            margin-left: 30px;
+            margin-top: 20px;  
+        }
+
+    #hedertop ul li ul li{
+            float: none;
+           margin: 0;
+            background-color: white;
+        padding: none;
+        padding: 10px;
+        
+   
+        }
+        #hedertop ul li ul  {
+            display: none;
+            
+        }
+        #hedertop ul li:hover ul{
+            display: block;
+            margin-top: 10px;
+         
+        }
+        #hedertop ul li ul li:hover{
+            color: white;
+            border-left:3px solid black;
+            background-color: rgba(255, 153, 0,0.75);
+        }
+        .supperq{
+            border-bottom: 1px solid black;
+            padding: 10px;
+            margin-bottom: 100px;
+        }
+        #hedertop img{
+            width: 90px;
+            height: 70px;
+        }
+        #hedertop {
+            background-color: #F8CA00;
+            width: 100%;
+           
+        }
+        #img{
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+        }   
+     #abc{
+            width: 100%;
+        }
+        #Slide img {
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            animation-name: img;
+            animation-duration: 14s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            z-index: -1; 
+        }
+        #Slide{
+            display: block;
+            width: 70%;
+            float: left;
+            height: 400px;
+            line-height: 400px;
+        }
+        @keyframes img{
+            0%{
+                opacity: 0;
+            }
+            7.14%{
+                opacity: 1;
+            }
+            21.42%{
+               
+                  opacity: 1;
+            }
+            28.56%{
+                 opacity: 0;
+            }
+            35.7{
+                 opacity: 1;
+            }
+            
+            100%{
+               opacity: 0;
+                
+            }
+        }
+            div img:nth-of-type(1){
+                animation-delay: 10.5s;
+            }
+            div img:nth-of-type(2){
+                animation-delay: 7s;
+            }   
+            div img:nth-of-type(3){
+                animation-delay: 3.5s;
+            }
+            div img:nth-of-type(4){
+                animation-delay: 0s;
+        
+        }
+        #TinTuc{
+            width: 29%;
+            float: right;
+            height: 400px;
+            background-color: #343434;
+        }
+        h3{
+            margin-top: 5px;
+            background-color: black;
+            color: #F8CA00;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .pcolor{
+            color: white;
+        }
+        .onee img{
+            width: 60px;
+            height: 60px;
+            float: left;
+            margin-right: 10px;
+            
+        }
+        .two img{
+            width: 60px;
+            height: 60px;
+            float: left;
+            margin-right: 10px;
+            
+        }
+        .three img{
+             width: 60px;
+            height: 60px;
+            float: left;
+            margin-right: 10px;
+        }
+        .four img{
+             width: 60px;
+            height: 60px;
+            float: left;
+            margin-right: 10px;
+        }
+        .all
+        {
+            margin-bottom: 50px;
+        }
+        .all a{
+            text-decoration: none;
+        }
+        #clear{
+            clear: both;
+        }
+     
+        h2{
+            background-color: #151515;
+            color: white;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 50px;
+        }
+        
+        #sanpham{
+            height: 420px;
+            text-align: center;
+        }
+        #phukien{
+             height: 420px;
+            text-align: center;
+        }
+        #quanao{
+            height: 420px;
+            text-align: center;
+        }
+        .Nameone{
+         display: inline-block;
+        }
+        #Name{
+        
+            height: 50px;
+            width: 300px;
+                border-bottom: 2px solid #F8CA00;
+            text-align: center;
+            line-height: 50px;
+            
+        }
+        #parent{
+            width: 300px;
+            height: 300px;
+            padding: 5px;
+           
+            position: relative;
+        }
+        #parent:hover #child{
+            transform: translate(-50%,-50%) scale(1.15);
+          
+        }
+        #child{
+            width: 250px;
+            height: 250px;
+            background-color: indianred;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition: all 2s;
+        }
+       
+        #logoin{
+            position: relative;
+            background-color: #F8CA00;
+            width: 100%;
+            height: 200px;
+            float: left;
+        }
+        #logoon{
+             position: absolute;
+            top: 22px;
+             left: 0px;
+             float: left;
+        }
+         #logoon img{
+            
+            margin-left: 26px;
+            width: 22%;
+            height: 150px;
+                
+            background-color: #F8CA00;
+            
+        }
+        #home {
+            background-color: #343434;
+            width: 100%;
+            height: 500px;
+        }
+        #SUM{
+            margin-top:  50px;
+            margin-left: 40px;
+        }
+        .team{
+            width: 50px;
+            height: 50px;
+            
+            
+            
+        }
+        .teamsum p{
+            vertical-align: middle;
+            color: white;
+            font-size: 14px;
+        }
+        .teamsum img{
+            width: 60px;
+            height: 60px;
+           margin-right: 10px;
+            float: left;
+           
+        }
+        .teamsum{
+            width: 400px;
+            height: 400px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        #LOGO{
+            
+            margin: 50px 150px 0px 500px;
+        }
+        #LOGO img{
+            width: 100px;
+            height: 100px;
+            border-radius: 30%;
+           
+        }
+        span{
+            font-size: 20px;
+        }
+        #LOGO p{
+            color: white;
+            text-align: left;
+        }
+        #LOGO img,#LOGO p{
+             margin-top: 40px;
+            vertical-align: middle;
+            display: inline-block;
+            
+        }
+        #we{
+            width: 100%;
+            height: 300px;
+            background-color: #343434;
+            border-top: 1px solid white;
+        }
+        
+        #wes{
+            margin-top: 50px;
+            text-align: center;
+        }
+        #wess{
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+        #wesss{
+            font-size: 20px;
+            color: white;
+        }
+        #wedes{
+            margin-top: 40px;
+            margin-left: 400px;
+            
+        }
+        .wed{
+            height: 50px;
+            width: 500px;
+            padding-left: 10px;
+            text-align: center;
+        }
+        .weds{
+            height: 50px;
+            width: 50px;
+            border: none;
+            margin-left: -4px;
+            color: black;
+            background-color: #F8CA00;
+        }
+           #end{
+            width: 100%;
+            height: 200px;
+            background-color: #151515;
+/*            display: inline-block;*/
+            border-top: 1px solid white;
+          
+        }
+        #end div{
+            margin: 50px 10px;
+            float: left;
+        }
+
+        .endone{
+            text-align: center;
+            color: white;
+        }
+        
+        .twoo{
+            float: right;
+            color: white;
+            
+            display: inline-block;
+        }
+        
+        .twoo img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+      
+        
+      #left{
+            width: 13%;
+       float: left;
+            position: sticky;
+            top: 130px;;
+            border: 1px solid #ccc;
+           height: 505px; 
+            
+
+        }
+        #left img{
+            width: 100%;
+           height: 504px;  
+            
+        }
+        #center{ 
+            width: 65%;
+         float: left;
+            border: 1px solid #ccc;
+            margin-left: 20px;
+        }
+        #center img{
+            width: 600px;
+            height: 500px;
+            margin-left: 140px;
+        }
+         #center p{
+           text-indent: 40px;
+        }
+        #leftcenterright{
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            margin-left: 10px;
+
+        }
+        #right{
+            width: 17%;
+            border: 1px solid #ccc;
+            margin-left: 30px; 
+            float: left;
+            position: sticky;
+            top: 130px;
+            text-align: center
+        }
+        #right img{
+            width: 70px;
+            height: 70px;  
+            padding: 3px;
+            border: 1px solid #ccc;
+        }
+           #right p{
+            width: 100%;
+            height: 30px;
+               background-color: black;
+               font-weight: bold;
+            padding: 3px;
+            border: 1px solid #ccc;
+               color: #f8ca00;
+                text-align: left;
+        }
+        #h4{
+            background-color: #F8CA00;
+            color: black;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 20px;
+        }
+        .p-center{
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+    <body>
+        <div id="sum">
+            <div id="header">
+                <p>Hỗ Trợ: 0962602113  </p>
+                <div>
+                <input type="text" class="one">
+                <button type="button" class="one ones" ><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <a href="#" id="one">Đăng Nhập</a>
+            </div>
+            </div>
+            <div id="hedertop">
+                <img src="./img/Logo.png">
+               <ul>
+                    <li><a href="index.html" class="supperq">Trang Chủ</a></li>
+                    <li><a href="#" class="supperq">Sản Phẩm</a>
+                        <ul>
+                             <li><a href="Winner.html">Winner</a></li>
+                            <li><a href="Exciter.html">Exciter</a></li>
+                            <li><a href="zoomer.html">Zoomer</a></li>
+                            <li><a href="rader.html">Raider</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <a href="#" class="supperq">Phụ Kiện - Linh Kiện</a>
+                        <ul>
+                            <li><a href="Tay%20Th%E1%BA%AFng%20Brembo.html">Tay Thắng Brembo</a></li>
+                            <li><a href="Phu%E1%BB%99c%20Ohlin.html">Phuộc Ohlin</a></li>
+                            <li><a href="vo-xe.html">Vỏ Xe Michenlin</a></li>
+                            <li><a href="heodau.html">Heo Dầu Brembo</a></li>
+                        </ul>
+                        </li>
+                    <li><a href="#" class="supperq">Công Nghệ</a></li>
+                    <li><a href="quanao.html" class="supperq">Quần Áo</a></li>
+                    <li><a href="#" class="supperq">Tin Tức</a></li>
+                    <li><a href="#" class="supperq">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </div>
+            <img id="img" src="./img/Capture.PNG">
+        
+        
+        <div id="abc">
+            
+            
+            
+            
+            <div id="Slide">
+                <img src="img/1.jpg">
+                <img src="img/2.jpg">
+                <img src="img/3.jpg"> 
+                <img src="img/4.jpg"> 
+            </div>
+            <div id="TinTuc">
+                <h3>Tin Tức</h3>
+                <div class="onee all">
+                    <a href="#" ><img src="img/4478046_Cover_F1.jpg"></a>
+                    <a href="#"><p class="pcolor">Red Bull RB9: Ông vua cuối cùng của thời đại V8 công thức 1</p></a>
+                </div>
+                <div id="clear"></div>
+                <div  class="two all">
+                    <a href="#"> <img src="img/tintuc2.jpg"></a>
+                    <a href="#"><p class="pcolor">Chi tiết nền tảng Bosch eScooter system trên xe điện VinFast: khác biệt nhờ khả năng kết nối</p></a>
+                </div>
+                   <div id="clear"></div>
+                <div class="three all">
+                    <a href="#"><img src="img/tintuc3.jpg"></a>
+                    <a href="#"><p class="pcolor">[#ReviewXe] Sh300i - Ông hoàng đường phố đích thực</p></a>
+                </div>
+                <div id="clear"></div>
+                <div class="four all">
+                    <a href="#"><img src="img/tintuc4.jpg"></a>
+                    <a href="#"><p class="pcolor">[QC] Honda thổi bùng lửa đam mê tại Triển lãm EICMA 2018</p></a>
+                </div>
+                
+            </div>
+            <div id="clear"></div>
+            
+        </div>
+        
+        <div>
+            
+        </div>
+<div id="leftcenterright">
+                 <div id="left">
+                    <img src="Winner/banner.jpg">
+                </div>
+                
+                
+                <div id="center">
+                  <h4 id="h4">Honda Zoomer độ động cơ đẹp và độc</h4>
+                    <p>Mẫu xe ga nhỏ nhắn trở nên hầm hố và mạnh mẽ hơn với động cơ mới và gắn thêm nhiều đồ chơi khác.
+Đối với những tay chơi xe độ tại Thái Lan, Honda Zoomer không phải là một cái tên lạ lẫm. Thiết kế đơn giản của xe dường như để nhắm đến đối tượng là những người ham mê tùy chỉnh, độ lại xe theo phong cách riêng.
+
+Một tay chơi tại Thái Lan đã tiến hành độ chiếc Zoomer của mình một cách rất khác biệt, cả về kiểu dáng cũng như động cơ. Không còn là một chiếc xe tay ga 50cc “hiền lành”, phiên bản độ sử dụng động cơ tăng áp, tuy nhiên công suất cụ thể của xe không được công bố.</p>
+                    <img src="Zoomer/1.jpg">
+                    <p class="p-center">Chiều dài tổng thể của xe tăng lên đáng kể, do kết cấu phía sau được thay đổi.</p>
+                    <img src="Zoomer/2.jpg">
+                    <p class="p-center">Sử dụng lốp to bản ở phía trước.
+
+Lốp sau cũng sử dụng loại to bản hơn.</p>
+                    <img src="Zoomer/3.jpg">
+                    <p class="p-center">Khối động cơ phức tạp hơn với hệ thống tăng áp.</p>
+                    <img src="Zoomer/4.jpg">
+                    <img src="Zoomer/5.jpg">    
+                    <img src="Zoomer/6.jpg">
+                    
+                    <p class="p-center">Phần đầu xe thay đổi nhiều so với mẫu xe tiêu chuẩn.</p>
+                    <img src="Zoomer/7.jpg">
+                    
+                    <p class="p-center">Nhiều chi tiết được làm từ inox sáng bóng.</p>
+                    <img src="Zoomer/8.jpg">
+                    <img src="Zoomer/9.jpg">
+                    <img src="Zoomer/10.jpg">
+                    <img src="Zoomer/11.jpg">
+                    <img src="Zoomer/12.jpg">
+                    
+                    <p class="p-center">Ống xả mới, thân xe được lắp thêm chống đổ như một số mẫu xe phân khối lớn.</p>
+                    
+    </div>
+                <div id="right">
+                   <p>Danh Mục Phục Tùng Xe</p>
+                    <img src="logo/01.png">
+                    <img src="logo/02.png">
+                    <img src="logo/03.png">
+                    <img src="logo/04.png">
+                    <img src="logo/05.png">
+                    <img src="logo/06.png">
+                    <img src="logo/07.png">
+                    <img src="logo/08.png">
+                    <img src="logo/09.png">
+                    <img src="logo/10.png">
+                    <img src="logo/11.png">
+                    <img src="logo/12.png">
+                    <p>Nhãn Hàng Bán Chạy</p>
+                    <img src="logo/a.jpg">
+                    <img src="logo/a1.jpg">
+                    <img src="logo/a2.png">
+                    <img src="logo/a3.jpg">
+                    <img src="logo/a4.jpg">
+                    <img src="logo/a5.jpg">
+                </div>
+               
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="logoin">
+            <div id="logoon">
+                <img src="img/lg1.jpg">
+                <img src="img/lo2.jpg">
+                <img src="img/l3.jpg">
+                <img src="img/021413-yamaha-revs-your-heart.jpg">
+            </div>
+        </div>
+        <div id="home">
+                <div id="LOGO">
+                <img src="img/Logo.png" class="team">
+                <p> <span>Công Ty  Được Thành Lập Từ năm 1999-2018</span> <br>
+Trải quan nhiều gia đôạn khó khăn đường đầu với thử thách và tồn tài <br>đến ngày hôm nay là một sự thành công vượt bậc</p>
+                </div>
+            <div id="clear"></div>
+            <div id="SUM">
+                <div class="teamsum">
+                    <img src="https://hondaxemay.com.vn/wp-content/themes/honda/assets/images/img/out-link-3-2.png" class="team">
+                    <p>ĐỘI NGŨ NHÂN VIÊN<br>
+Đội ngũ nhân viên được tuyển chọn kỹ lưỡng và được đào tạo các kỹ năng chuyên nghiệp cao.</p>
+                </div>
+                <div class="teamsum">
+                    <img src="https://hondaxemay.com.vn/wp-content/themes/honda/assets/images/img/out-link-2-2.png" class="team">
+                    <p>ĐỘI NGŨ SỮA CHỮA<br>
+Đội ngũ nhân viên được tuyển chọn kỹ lưỡng và được đào tạo các kỹ năng chuyên nghiệp cao.</p>
+                </div>
+                <div class="teamsum">
+                    <img src="img/out-link-1-2.png" class="team">
+                    <p>HỖ TRỢ VÀ CHĂM SÓC KHÁCH HÀNG<br>
+Đội ngũ chăm sóc khách hàng tận tình và chuyên nghiệp cao.</p>
+                </div>
+<!--
+                <div class="teamsum">
+                    <img src="img/out-link-1-2.png" class="team">
+                    <p>HỖ TRỢ VÀ CHĂM SÓC KHÁCH HÀNG
+Đội ngũ chăm sóc khách hàng tận tình và chuyên nghiệp cao.</p>
+                </div>
+-->
+            </div>
+        </div>
+        <div id="we">
+            <div id="wes">
+                <p id="wess">Chúng Tôi Ở Đây Là Vì Các Bạn</p>
+                <p id="wesss">Bạn hãy để lại email để bạn được cập nhật thông tin mới về SuperQ</p>
+            </div>
+            <div id="wedes">
+                <input type="text" class="wed" placeholder="Email">
+                <button type="button" class="weds" ><i class="fa fa-search" aria-hidden="true"></i></button>
+                   
+            </div>
+        </div>
+        <div id="end">
+            <div class="endone twoo">
+                <p>SuperQ<br>
+ Phân Phối Xe - Phụ Kiện Nhập Khẩu - Các Trang Thiết Bị Hiện Đại - Quần Áo Chính Hãng
+                <br>Copyright © 2018 - SuperQ
+                </p>
+            </div>
+            <div class="endtwo twoo">
+                <p>
+                Tel: 0962602113<br>
+
+Fax: (028) 11.222.333<br>
+
+Email: SuperQ@gmail.com</p>
+            </div>
+              <div class="endtwo twoo">
+               <img src="face.png">
+                  <img src="img/youe.png">
+                  <img src="img/google.png">
+            </div>   
+        </div>
+    </body>
+</html>

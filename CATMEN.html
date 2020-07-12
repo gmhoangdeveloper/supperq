@@ -1,0 +1,770 @@
+<!doctype html>
+<html>
+    <head>
+        <title>thanhmenu</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="/DuAN/img/logoCATMEN.ico" />
+         <meta name="keywords" content="mua đồng hồ chất lượng, mua đồng hồ tphcm, shop cat man" />  <!-- Keywords, để các công cụ tìm kiếm sreach web -->
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> <!-- Phông chữ của Google -->
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!-- Các kiểu logo của font awesome -->
+    </head>
+    <style>
+       *,html{
+            margin: 0; /*kích cỡ của lề của trang sẽ được bo vô sát luôn*/
+            padding: 0;
+            box-sizing: border-box; /*nó chưa bao gồm chiều cao và chiều rộng của nó*/
+                }
+        body{
+            font-size: 100%; /*cỡ chữ*/
+        
+           
+        }        
+        header{
+            font-weight: bold; /*cỡ chữ sẽ được im đậm */
+            color: #fff;/*chữ màu trắng*/
+            background-image: url('/DuAN/img/1.jpg'); /*chèn hình vào*/
+            /*background-repeat: no-repeat;*/
+            background-position: center;
+            background-size: cover;
+            padding:10px 40px 100px;
+/*            margin-bottom: 20px;*/
+            text-align: center;   
+            background-color: #ccc;
+           
+}
+        header p {
+            font-size: 100px;
+            text-align: center;
+            vertical-align: middle; 
+            color: white;
+        }
+        .nav{
+            margin: 0;
+            width: 100%;
+            background: #E25D33;
+            height: 80px;
+            color: #DCD8CF;
+            
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+   
+        }
+        ul li{
+            float: left;
+            margin-top: 20px;
+            
+        }
+        ul li a{
+            width: 180px;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 17px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: serif,sans-serif;
+            font-weight: bold;
+            border: 1px solid red;
+             
+        }
+        a:hover{
+            background: #424242;
+        }
+        ul li ul{
+            background: #E25D33;
+        }
+        ul li ul li{
+            float: none;
+            
+        }
+        ul li ul {
+            display: none;
+        }
+        ul li:hover ul {
+            display: block;
+        }
+        #HINHANH img {
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            animation-name: img;
+            animation-duration: 14s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            z-index: -1; 
+        }
+        #HINHANH{
+             display: block;
+             width: 100%;
+                height: 400px;
+                line-height: 400px;
+        }
+        @keyframes img{
+            0%{
+                opacity: 0;
+            }
+            7.14%{
+                opacity: 1;
+            }
+            21.42%{
+               
+                  opacity: 1;
+            }
+            28.56%{
+                 opacity: 0;
+            }
+            35.7{
+                 opacity: 1;
+            }
+            
+            100%{
+               opacity: 0;
+                
+            }
+        }
+            div img:nth-of-type(1){
+                animation-delay: 10.5s;
+            }
+            div img:nth-of-type(2){
+                animation-delay: 7s;
+            }
+            
+            div img:nth-of-type(3){
+                animation-delay: 3.5s;
+            }
+             div img:nth-of-type(4){
+                animation-delay: 0s;
+        
+        }
+        
+        
+        .box{
+            
+            width: 250px;
+            border: 4px solid #ccc;
+            height: 450px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            display: inline-block;
+        }
+        p{
+            color: #fff;
+        }
+        .box img{
+            transition: all 0.3s ease-in-out;
+            width: 250px;
+            height: 450px;
+        }
+        .mask{
+            width: 250px;
+            height: 450px;
+            background-color: rgba(107, 107, 71, 0.3);
+            
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.3s ease-in-out;
+            transform: translateX(250px) rotate(180deg);
+            transition-timing-function: ease;
+
+        }
+        .mask h2{
+            background: rgba(255,255,2555,0.5);
+/*            color: #000;*/
+            box-shadow: 0 1px 3px rgba(159,141,140,0.5);
+            padding: 5px;
+            transform: translateY(-100px);
+            opacity: 1;
+            transition: all 0.5s;
+            color: black;
+        }
+        .mask a{
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            background-color: #000;
+            padding: 5px;
+            transform: translateY(-200px);
+            opacity: 0;
+            transition: all 0.5s;
+            
+        }
+        
+        .box:hover h2{
+            transform: translateY(0);
+            opacity: 1; 
+        }
+        .box:hover a{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .box:hover .mask{
+            transform: translateX(0) rotate(0);
+        }
+        p{
+            color: black;
+            font-weight: bold;
+            padding: 10px;
+            font-size: 17px;
+        }
+        
+        #color{
+            color: red;
+            font-size: 25px;
+        }
+        
+        #CASIO{
+            width: 100%;
+           
+            text-align: center;
+            
+            font-size: 40px;
+            color: white;
+            background-color: #E25D33;
+        }
+        #abc{
+            width: 95%;
+            margin: 0 auto; 
+        }
+        #abcd{
+            width: 95%;
+            margin: 0 auto;
+        }
+        #so{
+            background-color: #E25D33;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .sl{
+            display: inline-table;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #ccc;
+            font-size: 25px;
+            padding: 5px 10px 5px 10px;
+            background-color: white;
+            color: black;
+            font-weight: 100;
+            margin: 4px;
+            
+        }
+            
+        footer{
+/*            border: 2px solid black;*/
+            color: white;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bold;
+            background-repeat: no-repeat;
+            background-position: center; 
+            font-size: 20px;
+            background-color: #E25D33;
+            }
+        
+        footer a{
+            padding: 0 15px 0px 0px;
+            }
+        footer a:hover{
+            text-decoration: none;
+            }
+        #main {
+            margin: 10px 0;
+            }
+
+        #google {
+            color: firebrick;
+            }
+
+        #facebook {
+            color: darkblue;
+            }
+
+        #twitter {
+            color: aqua;
+            }
+    </style>
+    <body>
+        <header>
+            <p>CAT MAN</p><br>
+            <h2>UY TÍNH VÀ CHẤT LƯỢNG CÁC HÃNG ĐỒNG HỒ PHÂN PHỐI TẠI VIỆT NAM</h2>
+        </header>
+        <div class="nav">
+        <ul>
+            <li><a href ="ThanhMENU.html">TRANG CHỦ</a></li>
+            <li><a href ="#">THƯƠNG HIỆU</a>
+                <ul>
+                        <li><a href ="#">Casio</a></li>   
+                        <li><a href ="#">G-Shock & Baby-G</a></li> 
+                        <li><a href ="#">Seiko</a></li> 
+                        <li><a href ="#">Tissot</a></li> 
+                        <li><a href ="#">Longines</a></li>
+                        <li><a href ="#">Titan</a></li>
+                    <li><a href ="#">Daniel Wellington(DW)</a></li>
+                </ul>
+            </li>
+            <li><a href ="#">KHUYÊN DÙNG</a>
+            <ul>
+                        <li><a href ="#">Orient</a></li>   
+                        <li><a href ="#">G-Shock & Baby-G</a></li> 
+                        
+                        <li><a href ="#">Tissot</a></li> 
+                        <li><a href ="#">Michael Kors</a></li>
+                        <li><a href ="#">Fossil</a></li>
+                        <li><a href ="#">Daniel Wellington(DW)</a>
+                </ul>
+            </li>
+            <li><a href ="#">MỨC GIÁ</a> 
+            <ul>
+                        <li><a href ="#">0đ-2.000.000đ</a></li>   
+                        <li><a href ="#">2.000.000-4.000.000</a></li> 
+                        <li><a href ="#">4.000.000-6.000.000</a></li>                         
+                        <li><a href ="#">8.000.000-10.000.000</a>                      
+                </ul>
+            </li>
+            <li><a href ="#">PHỤ KIỆN</a>
+            <ul>
+                        <li><a href ="#">Dây Da ZRC</a></li>   
+                        <li><a href ="#">Hộp Đồng Hồ</a></li> 
+                        <li><a href ="#">D.Vụ In Logo Lên Đồng Hồ</a></li>                         
+                        <li><a href ="#">Khắc Laser Lên Đồng Hồ</a>                      
+                </ul>
+            </li>
+            
+            <li ><a href ="LOGIN.html">ĐĂNG NHẬP</a></li>
+            <li><a href ="#">LIÊN HỆ HỎI ĐÁP</a>
+                <ul>
+                        <li><a href ="#">Thông Tin Liên Hệ </a></li>   
+                        <li><a href ="#">Thắc Mắc - Góp Ý</a></li> 
+                        <li><a href ="#">D.Vụ In Logo Lên Đồng Hồ</a>          
+                </ul>
+            </li>        
+        </ul>
+        </div>  
+       <div id="HINHANH">
+            <img src="img/DW001000202.jpg">
+            <img src="img/ae-1200whd.jpg">
+            <img src="img/GST-S100D-1A4JF_bs2.jpg"> 
+            <img src="img/dong-ho-tissot-0.jpg"> 
+        </div>
+        <div id="CASIO">
+           CASIO
+        </div>
+            <div id="abc">
+        <div class="box">
+           <img src="/DuAN//img/CASIO/91FHqb62dZL._UY445_.jpg">
+           <div class="mask">
+                <h2>Casio EFV-510L-2AVUDF</h2><br>
+<!--                <p>Mã Số Sản Phẩm: AE-1200WHD-1AVDF</p>-->
+               
+               
+               <p>Đồng hồ nam Casio EFV-510L-2AVUDF với thiết kế dành cho nam theo phong cách thời trang, kim chỉ và vạch số to rõ mạnh mẽ nổi bật trên nền số xanh thể thao, kết hợp với dây đeo bằng da nâu tạo nên vẻ lịch lãm và thời trang.</p>
+               <p>Chức Năng: Lịch Ngày – Đồng Hồ 24 Giờ – Chronograph
+</p>
+               <p id="color">Giá:3.289.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+        <div class="box">
+           <img src="/DuAN/img/CASIO/CASIO2.jpg">
+           <div class="mask">
+                <h2>CASIO EFV-530GL-5AVUDF </h2><br>
+               <p>Đồng hồ nam Casio EFV-530GL-5AVUDF tạo nên ấn tượng mạnh mẽ với mặt số được thiết kế kèm theo 3 ô mặt số nhỏ với chức năng Chronograph đầy tiện ích đồng thời tạo nên sự lịch lãm khi kết hợp cùng dây da tông màu nâu.</p>
+               <p>Chức Năng: Lịch Ngày – Chronograph</p>
+               <p id="color">Giá:3.887.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>       
+        <div class="box">
+           <img src="/DuAN/img/CASIO/CASIO3.jpg">
+           <div class="mask">
+                <h2>CASIO EFV-530GL-5AVUDF </h2><br>
+               <p>Đồng hồ Casio EFV-510D-1AVUDF dành cho nam với kiểu dáng thể thao, kim chỉ với vạch số in to rõ thể hiện sự mạnh mẻ, 3 ô phụ với 3 chức năng khác nhau tạo nên vẻ hiện đại, kết hợp với dây đeo chất liệu kim loại với phong cách nam tính.</p>
+
+               <p>Chức Năng: Lịch Ngày – Đồng Hồ 24 Giờ – Chronograph</p>
+
+
+               <p id="color">Giá:3.289.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>    
+        <div class="box">
+           <img src="/DuAN/img/CASIO/CASIO4.1.jpg">
+           <div class="mask">
+                <h2>CASIO MTP-1384D-1AVDF </h2><br>
+               <p>Với mặt số đồng hồ Casio MTP-1384D-1AVDF màu đen mạnh mẽ, kim chỉ và vạch chỉ giờ bằng số La Mã được làm mỏng tinh tế nổi bật trên nền số, dây đeo kim loại lịch lãm, đồng hồ chịu được độ sâu 10ATM phù hợp cho các hoạt động dưới nước trừ việc lặn.</p>
+               <p>Chức Năng: Lịch Ngày – Lịch Thứ</p>
+               <p id="color">Giá:2.024.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+        <div class="box">
+           <img src="/DuAN/img/CASIO/CASIO5.jpg">
+           <div class="mask">
+                <h2>CASIO MTP-E303SG-1AVDF </h2><br>
+               <p>Đồng hồ thời trang Casio MTP-E303SG-1AVDF với mặt đồng hồ nền đen với các chi tiết mạ vàng sang trọng, 3 ô đồng hồ phụ tinh tế với viền vàng.</p>
+               <p>Chức Năng: Lịch Ngày – Lịch Thứ – Đồng Hồ 24h</p>
+               <p id="color">Giá: 3.542.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+        </div>
+                <div id="so">
+                <div class="sl">1</div>
+                <div class="sl">2</div>
+                <div class="sl">3</div>
+                <div class="sl">4</div>
+                <div class="sl">NEXT</div>
+        </div>
+        <div id="CASIO">
+            G-Shock & Baby-G
+        </div>
+            <div id="abcd">
+        <div class="box">
+           <img src="/DuAN/img/G-Shock/G1.jpg">
+           <div class="mask">
+                <h2>G-SHOCK GST-S130L-1ADR</h2><br>
+               <p>Mẫu đồng hồ G-Shock GST-S130L-1ADR ấn tượng kích thước mặt số tròn to đầy nam tính, sự kết hợp giữa kim chỉ cùng các thông số điện tử tạo nên sự hài hòa trên nền mặt số tông màu đen, kết hợp cùng bộ dây đeo bằng da nâu tăng thêm vẻ lịch lãm.</p>
+               <p>Chức Năng: Lịch – Bộ Bấm Giờ – Giờ Kép – Đèn Led – Vài Chức Năng Khác</p>
+               <p id="color">Giá: 8.464.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+        <div class="box">
+           <img src="/DuAN/img/G-Shock/G2.jpg">
+           <div class="mask">
+                <h2>G-SHOCK GST-210D-1ADR </h2><br>
+               <p>Đồng hồ nam G-Shock GST-210D-1ADR với kiểu dáng thể thao, mặt đồng hồ to tròn nam tính cùng với mặt dố điện tử với những tính năng tiện dụng hiện đại, kết hợp với dây đeo kim loại đem lại phong cách thời trang năng động cho phái mạnh.</p>
+               <p>Chức Năng: Lịch – Bộ Bấm Giờ – Giờ Kép – Đèn Led – Vài Chức Năng Khác
+</p>
+               <p id="color">Giá: 10.143.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>             
+        <div class="box">
+           <img src="/DuAN/img/99963230_v_1423927407.jpg">
+                <div class="mask">
+                    <h2>CASIO AE-1200WHD-1AVDF</h2><br>
+                    <p>Đồng hồ nam Casio AE1200WHD có mặt đồng hồ vuông to với phong cách thể thao, mặt số điện tử với những tính năng hiện đại tiện dụng, kết hợp với dây đeo bằng kim loại đem lại vẻ mạnh mẽ cá tính dành cho phái nam.</p>
+                    <p>Chức Năng:Lịch – Bộ Bấm Giờ – Giờ Kép – Đèn Led – Vài Chức Năng Khác</p>
+                    <p id="color">Giá: 1.219.000đ</p>
+                    <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>          
+        <div class="box">
+           <img src="/DuAN/img/G-Shock/G4.jpg">
+           <div class="mask">
+                <h2>G-SHOCK GA-100CM-8ADR</h2><br>
+               <p>Đồng hồ G-Shock GA-100CM-8ADR có vỏ và dây đeo cao su màu xám với họa tiết rằn ri độc đáo, mặt số được dập nổi, kim chỉ sắc nét nổi bật, được trang bị đèn LED siêu sáng giúp nhìn rõ trong đêm, là phụ kiện thể hiện vẻ mạnh mẽ, nam tính dành cho phái mạnh.
+</p>
+               <p>Chức Năng: Lịch – Bộ Bấm Giờ – Giờ Kép – Đèn Led – Vài Chức Năng Khác
+
+</p>
+               <p id="color">Giá: 4.899.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>     
+        <div class="box">
+           <img src="/DuAN/img/G-Shock/G5.jpg">
+           <div class="mask">
+                <h2>G-SHOCK G-9000-1VDR</h2><br>
+               <p>Đồng hồ G-Shock G-9000-1VDR có vỏ và dây đeo bằng chất liệu cao su cao cấp màu đen mạnh mẽ, mặt số điện tử với cách tính năng tiện dụng, đèn LED kép siêu sáng giúp nhìn trong đêm dễ dàng, tạo nên phụ kiện thời trang thể thao trẻ trung năng động cho phái mạnh.</p>
+               <p>Chức Năng: Lịch – Bộ Bấm Giờ – Giờ Kép – Đèn Led – Vài Chức Năng Khác</p>
+               <p id="color">Giá: 2.714.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+        </div>
+                <div id="so">
+            <div class="sl">1</div>
+            <div class="sl">2</div>
+            <div class="sl">3</div>
+            <div class="sl">4</div>
+            <div class="sl">NEXT</div>
+        </div>
+         <div id="CASIO">
+            DANIEL WELLINGTON (DW)
+        </div>
+        <div id="abcd">
+            <div class="box">
+           <img src="/DuAN/img/DW/1.jpg">
+           <div class="mask">
+                <h2>DW00100085</h2><br>
+               <p>Đồng hồ Daniel Wellington DW00100085 – 1102DW có vỏ kim loại bằng chất liệu thép không gỉ cao cấp được mạ vàng, nền số màu trắng trang nhã, kim chỉ màu xanh cùng chữ số La Mã được phủ màu đen nổi bật, dây đeo bằng chất liệu da cao cấp đến từ Ý, đem đến phụ kiện thời trang sang trọng và lịch lãm dành cho phái mạnh.</p>
+
+               <p>Chức Năng: Xem Giờ - Lịch Ngày</p>
+               <p id="color">Giá: 5.000.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+            <div class="box">
+           <img src="/DuAN/img/DW/d2.jpg">
+           <div class="mask">
+                <h2>DW00100020</h2><br>
+               <p>Đồng hồ Daniel Wellington DW00100020 – 0206DW có mặt số tròn to với viền kim loại được mạ bạc sáng bóng, kim chỉ và vạch số mỏng nổi bật trên nền số màu trắng trang nhã, dây đeo bằng chất liệu da bê Italy cao cấp màu nâu bóng đem lại vẻ lịch lãm sang trọng dành cho phái mạnh.</p>
+               <p>Chức Năng: Xem Giờ</p>
+               <p id="color">Giá: 5.200.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>    
+            <div class="box">
+           <img src="/DuAN/img/DW/91EOOdTrhDL._UY445_.jpg">
+           <div class="mask">
+                <h2>DW00100147</h2><br>
+               <p>Mẫu đồng hồ nữ Daniel Wellington DW00100147 với thiết kế giản dị, vỏ máy bằng thép không gỉ màu đồng, kim chỉ cùng vạch số với kiểu thanh mảnh nhẹ nhàng, phối cùng dây da màu đen tạo nên vẻ đẹp huyền bí cho các bạn nữ.</p>
+
+               <p>Chức Năng: Xem Giờ</p>
+               <p id="color">Giá: 4.500.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+            <div class="box">
+           <img src="/DuAN/img/DW/4.jpg">
+           <div class="mask">
+                <h2>G-SHOCK DW00100018 </h2><br>
+               <p>Đồng hồ Daniel Wellington DW00100018 có mặt số tròn nam tính với viền mỏng tinh tế bao quanh nền số màu trắng thanh lịch, kim chỉ và vạch số được dát mỏng nổi bật, logo DW nằm ở vị trí 12h với chữ D cách điệu tinh tế, dây đeo bằng chất liệu vải NATO cao cấp với màu trắng và màu xanh xen kẽ tạo nên phong cách thời trang trẻ trung, lịch lãm cho phái mạnh.</p>
+               <p>Chức Năng: Xem Giờ</p>
+               <p id="color">Giá: 4.500.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+            <div class="box">
+           <img src="/DuAN/img/DW/dong-ho-daniel-wellington-petite-dw00100162-593a73794143f-09062017170753.jpg">
+           <div class="mask">
+                <h2>DW00100162</h2><br>
+               <p>Mẫu đồng hồ nữ với thiết kế giản dị đến từ hãng Daniel Wellington DW00100162 kim chỉ cùng vạch số được gia công kiểu dáng thanh mảnh mang lại vẻ nữ tính trên nền mặt số tông màu đen huyền bí.
+</p>
+               <p>Chức Năng: Xem Giờ</p>
+               <p id="color">Giá: 4.000.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+        </div>
+        <div id="so">
+                
+            <div class="sl">1</div>
+            <div class="sl">2</div>
+            <div class="sl">3</div>
+            <div class="sl">4</div>
+        <div class="sl">NEXT</div>
+                </div>
+         <div id="CASIO">
+            TISSOT
+        </div>
+            <div id="abcd">
+            <div class="box">
+           <img src="/DuAN/img/DW/t1.jpg">
+           <div class="mask">
+                <h2>T085.427.16.013.00</h2><br>
+               <p>Đồng hồ Tissot T085.427.16.013.00 có vỏ kim loại bằng chất liệu thép không gỉ mạ bạc sáng bóng, kim chỉ và vạch số La Mã phủ màu đen nổi bật trên nền số màu trắng trang nhã, dây đeo bằng chất liệu da cao cấp màu đen có vân đem lại phong cách thời trang lịch lãm, sang trọng dành cho phái mạnh.</p>
+               <p>Chức Năng: Lịch Ngày – Chronograph</p>
+               <p id="color">Giá: 23.600.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+            <div class="box">
+           <img src="/DuAN/img/DW/t2.jpg">
+           <div class="mask">
+                <h2>T085.407.11.051.00</h2><br>
+                <p>Đồng hồ Tissot T085.407.11.051.00 với thiết kế nền số màu đen mạnh mẽ, điểm tô ánh bạc của kim chỉ và gạch số, dây đeo kim loại chắc chắn, phù hợp với nét lịch lãm, sang trọng của đàn ông.</p>
+               <p>Chức Năng: Lịch Ngày</p>
+               <p id="color">Giá: 18.140.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>             
+            <div class="box">
+           <img src="/DuAN/img/DW/t3.jpg">
+           <div class="mask">
+                <h2>T055.427.11.057.00</h2><br>
+               <p>Đồng hồ Tissot T055.427.11.057.00 có mặt số tròn lớn, kim chỉ và vạch số phủ màu bạc sang trọng nổi bật trên nền số màu đen, dây đeo kim loại to chắc chắn mang đến phong cách lịch lãm, sang trọng cho phái mạnh.
+</p>
+               <p>Chức Năng: Lịch Ngày – Chronograph</p>
+               <p id="color">Giá: 29.340.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>         
+            <div class="box">
+           <img src="/DuAN/img/DW/t4.jpg">
+           <div class="mask">
+                <h2>T060.407.22.051.00</h2><br>
+               <p>Đồng hồ nam Tissot T060.407.22.051.00 với thiết kế sang trọng phong cách nam tính, kim chỉ và vạch số to rõ màu vàng nổi bật trên nền màu đen mạnh mẽ, kết hợp với dây đeo đờ mi kim loại tạo nên vẻ chắc chắn mạnh mẽ và sang trọng.</p>
+               <p>Chức Năng: Lịch Ngày</p>
+               <p id="color">Giá: 23.130.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+            <div class="box">
+           <img src="/DuAN/img/DW/t5.jpg">
+           <div class="mask">
+                <h2>T063.617.16.057.00</h2><br>
+               <p>Đồng hồ Tissot T063.617.16.057.00 có mặt số tròn lớn với vỏ kim loại màu bạc sáng bóng, kim chỉ và vạch số thanh mãnh nổi bật trên nền số màu đen, dây đeo bằng chất liệu da cao cấp màu đen có vân mang đến vẻ lịch lãm sang trọng cho phái mạnh.</p>
+               <p>Chức Năng: Lịch Ngày – Chronograph</p>
+               <p id="color">Giá: 12.870.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+        </div>
+        <div id="so">
+            <div class="sl">1</div>
+            <div class="sl">2</div>
+            <div class="sl">3</div>
+            <div class="sl">4</div>
+        <div class="sl">NEXT</div>
+                </div>
+         <div id="CASIO">
+            LONGINES
+        </div>
+        <div id="abcd">
+            <div class="box">
+           <img src="/DuAN/img/DW/l1.jpg">
+           <div class="mask">
+                <h2>L4.910.4.12.6</h2><br>
+               <p>Mẫu Longines L4.910.4.12.6 đồng hồ 3 kim tạo nên phong cách giản dị một chút điềm đạm nam tính, kim chỉ cùng các vạch số được tạo hình kiểu dáng mỏng một yếu tố của sự tinh tế sang trọng.</p>
+               <p>Chức Năng: Lịch Ngày </p>
+               <p id="color">Giá: 45.320.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+            <div class="box">
+           <img src="/DuAN/img/DW/l2.jpg">
+           <div class="mask">
+                <h2>L4.860.2.32.8</h2><br>
+               <p>Mẫu đồng hồ L4.860.2.32.8 với một vẻ ngoài nổi bật cuốn hút với thiết kế tổng thể vỏ máy cùng dây đeo bao phủ tông màu vàng của sự đẳng cấp sang trọng đến từ thượng hiệu Longines.</p>
+               <p>Chức Năng: Lịch Ngày </p>
+               <p id="color">Giá: 38.060.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>  
+            <div class="box">
+           <img src="/DuAN/img/DW/l3.jpg">
+           <div class="mask">
+                <h2>L4.755.2.11.2</h2><br>
+               <p>Một thiết kế mang lại vẻ ngoài lịch lãm đến từ mẫu Longines L4.755.2.11.2 với cộc số chữ la mã đậm chất cổ điển dành cho phái mạnh phối cùng với mẫu dây da tông màu đen có vân.</p>
+               <p>Chức Năng: Lịch Ngày </p>
+               <p id="color">Giá: 33.000.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+            <div class="box">
+           <img src="/DuAN/img/DW/l4.jpg">
+           <div class="mask">
+                <h2>L4.209.2.32.7</h2><br>
+               <p>Đồng hồ Longines L4.209.2.32.7 làm nên vẻ sang trọng, quý phái khi mang mặt số, viền vàng cổ điển kết hợp với dây đờ mi, nét chấm phá với kim vạch màu đen trang nhã.</p>
+               <p>Chức Năng: Lịch Ngày</p>
+               <p id="color">Giá: 31.680.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+            <div class="box">
+           <img src="/DuAN/img/DW/l6.jpg">
+           <div class="mask">
+                <h2>L4.766.2.11.8</h2><br>
+               <p>Đồng hồ Longines L4.766.2.11.8 kiểu dáng sang trọng khi kết hợp giữa vỏ máy cùng với dây đeo bằng thép không gỉ mạ vàng, dưới mặt kính Sapphire kim chỉ được thiết kế gia công 1 cách mỏng và đầy tinh tế.</p>
+               <p>Chức Năng: Lịch Ngày – Chronograph</p>
+               <p id="color">Giá: 37.180.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+        </div>
+        <div id="so">
+                
+            <div class="sl">1</div>
+            <div class="sl">2</div>
+            <div class="sl">3</div>
+            <div class="sl">4</div>
+        <div class="sl">NEXT</div>
+                </div>
+        <div id="CASIO">
+            CITIZEN
+        </div>
+        <div id="abcd">
+        <div class="box">
+           <img src="/DuAN/img/DW/c1.jpg">
+           <div class="mask">
+                <h2>Citizen BM8475-00F</h2><br>
+               <p>Đồng hồ Citizen BM8475-00F có kim chỉ và vạch số được là nổi độc đáo trên nền số màu đen mạnh mẽ, ô lịch ngày lịch thứ vị trí 3h tinh tế, dây đeo bằng chất liệu dây vải mang phong cách thời trang cá tính.</p>
+               <p>Chức năng: Lịch Ngày – Lịch Thứ</p>
+               <p id="color">Giá: 5.990.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+        
+        <div class="box">
+           <img src="/DuAN/img/DW/c2.jpg">
+           <div class="mask">
+                <h2>CITIZEN NP1010-01A</h2><br>
+               <p>Mẫu Citizen NP1010-01A mang đến vẻ ngoài lịch lãm của phái mạnh với mẫu dây đeo da phối tông màu nâu, nổi bật lên vẻ độc đáo bên dưới mặt kính Sapphire thiết kế ô chân kính phô ra 1 phần trải nghiệm của bộ máy cơ đặc trưng nam tính.</p>
+               <p>Chức năng: Đồng Hồ 24 Giờ</p>
+               <p id="color">Giá: 12.200.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+                
+                
+              <div class="box">
+           <img src="/DuAN/img/DW/c3.jpg">
+           <div class="mask">
+                <h2>CITIZEN NH8353-00H </h2><br>
+               <p>Đồng hồ nam Citizen NH8353-00H có vỏ kim loại tạo vẻ chắc chắn, kim chỉ và vạch số la mã nổi bật trên nền đen, kết hợp với dây đeo bằng chất liệu da màu nâu đem lại phong cách cổ điển lịch lãm, nam tính cho phái mạnh.</p>
+               <p>Chức năng: Lịch Ngày – Lịch Thứ</p>
+               <p id="color">Giá: 5.500.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+                
+                
+        <div class="box">
+           <img src="/DuAN/img/DW/c4.jpg">
+           <div class="mask">
+                <h2>Citizen NH8365-86M</h2><br>
+               <p>Mẫu Citizen NH8365-86M nam tính với sự kết hợp hài hòa giữa vỏ máy cùng dây đeo phối chung tông màu đen đầy nam tính, nổi bật với mẫu kim chỉ cùng nền cọc số bao phủ tông vàng khoác lên vẻ sang trọng lịch lãm cùng kiểu dáng mỏng trẻ trung tinh tế.</p>
+               <p>Chức năng: Lịch Ngày – Lịch Thứ</p>
+               <p id="color">Giá: 6.800.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+       <div class="box">
+           <img src="/DuAN/img/DW/c5.jpg">
+           <div class="mask">
+                <h2>Citizen AN3600-59L</h2><br>
+               <p>Mẫu Citizen AN3600-59L đầy vẻ nam tính với phần vỏ viền ngoài được thiết kế tạo hình viền số, đậm chất thể thao với vẻ ngoài đặc trưng có 3 nút điều chỉnh kèm theo nền mặt số được bố trí thêm các ô số nhỏ với tính năng Chronograph.</p>
+               <p>Chức năng: Lịch Ngày – Chronograph</p>
+               <p id="color">Giá: 5.400.000đ</p>
+                <a href="#">Chi Tiết Sản Phẩm</a>
+           </div>
+       </div>
+        </div>
+        <div id="so">
+                
+            <div class="sl">1</div>
+            <div class="sl">2</div>
+            <div class="sl">3</div>
+            <div class="sl">4</div>
+        <div class="sl">NEXT</div>
+                </div>
+        <footer>
+            
+            <div>
+                <a id="google" href="/"><i class="fa fa-google-plus-square" aria-hidden="true"> Google G+</i>  <!--Chèn logo trên font awesome-->
+</a>
+                <a id="facebook" href="/"><i class="fa fa-facebook" aria-hidden="true">  Facebook</i>
+</a>
+                <a id="twitter" href="/"><i class="fa fa-twitter" aria-hidden="true"> Twitter</i>
+</a>
+            </div>  
+            <div id="main">
+                &copy;<!--Gọi ký hiệu đặc biệt--> 2018 - CAT MAN- Đồng hồ chính hãng - Uy Tính.
+            </div>
+            <div id="tt">THÔNG TIN LIÊN HỆ <br>
+        Giờ mở cửa: 8h-21h30|Hotline: 1900.6777    
+        </div>
+        </footer>
+    </body>
+</html>

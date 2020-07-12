@@ -1,0 +1,823 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Honda Winner</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="/img/Logo.png" />
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        *,html{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+           body{
+          min-width: 1300px;
+        }
+       #sum{
+            position: sticky;
+            top: 0;
+           z-index: 1;
+        }
+        #header{
+            background-color: #070706;
+            height: 50px;
+            width: 100%;
+            line-height: 50px;
+        }
+        #header p{
+            float: left;
+            color: white;
+            margin-left: 80px;
+        }
+        #header div{
+            float: right;
+            margin-right: 30px;
+            position: relative;
+        }
+        #header div a {
+            margin-left: 30px;
+            color: white;
+            text-decoration: none;
+            
+        }
+        #header div input
+         {
+            margin-right:-5px; 
+             border: none;
+        }
+        .one{
+            padding: 5px;
+        }
+        .ones{
+            background-color:#C4C4C4;
+            border:none;
+           
+            
+        }
+        #one:hover{
+            color: #F8CA00;
+        }
+        
+        #hedertop img,#hedertop ul {
+           vertical-align: middle;
+            display: inline-block;
+        }
+        a{  
+            text-decoration: none;
+            color: inherit;
+        }
+        #hedertop ul{
+            position:absolute;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #hedertop ul li{ 
+            float: left;
+            list-style: none;
+            
+            margin-left: 30px;
+            margin-top: 20px;  
+        }
+
+    #hedertop ul li ul li{
+            float: none;
+           margin: 0;
+            background-color: white;
+        padding: none;
+        padding: 10px;
+        
+   
+        }
+        #hedertop ul li ul  {
+            display: none;
+            
+        }
+        #hedertop ul li:hover ul{
+            display: block;
+            margin-top: 10px;
+         
+        }
+        #hedertop ul li ul li:hover{
+            color: white;
+            border-left:3px solid black;
+            background-color: rgba(255, 153, 0,0.75);
+            
+        }
+        .supperq{
+            border-bottom: 1px solid black;
+            padding: 10px;
+            margin-bottom: 100px;
+        }
+        #hedertop img{
+            width: 90px;
+            height: 70px;
+        }
+        #hedertop {
+            background-color: #F8CA00;
+            width: 100%;
+           
+        }
+        
+        #img{
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+        }      
+        #abc{
+            width: 100%;
+        }
+        #Slide img {
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            animation-name: img;
+            animation-duration: 14s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            z-index: -1; 
+        }
+        #Slide{
+            display: block;
+            width: 70%;
+            float: left;
+            height: 400px;
+            line-height: 400px;
+        }
+        @keyframes img{
+            0%{
+                opacity: 0;
+            }
+            7.14%{
+                opacity: 1;
+            }
+            21.42%{
+               
+                  opacity: 1;
+            }
+            28.56%{
+                 opacity: 0;
+            }
+            35.7{
+                 opacity: 1;
+            }
+            
+            100%{
+               opacity: 0;
+                
+            }
+        }
+            div img:nth-of-type(1){
+                animation-delay: 10.5s;
+            }
+            div img:nth-of-type(2){
+                animation-delay: 7s;
+            }   
+            div img:nth-of-type(3){
+                animation-delay: 3.5s;
+            }
+            div img:nth-of-type(4){
+                animation-delay: 0s;
+        
+        }
+        #TinTuc{
+            width: 29%;
+            float: right;
+            height: 400px;
+            background-color: #343434;
+        }
+        h3{
+            margin-top: 5px;
+            background-color: black;
+            color: #F8CA00;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .pcolor{
+            color: white;
+        }
+        .onee img{
+            width: 60px;
+            height: 60px;
+            float: left;
+            margin-right: 10px;
+            
+        }
+        .two img{
+            width: 60px;
+            height: 60px;
+            float: left;
+            margin-right: 10px;
+            
+        }
+        .three img{
+             width: 60px;
+            height: 60px;
+            float: left;
+            margin-right: 10px;
+        }
+        .four img{
+             width: 60px;
+            height: 60px;
+            float: left;
+            margin-right: 10px;
+        }
+        .all
+        {
+            margin-bottom: 50px;
+        }
+        .all a{
+            text-decoration: none;
+        }
+        #clear{
+            clear: both;
+        }
+     
+        h2{
+            background-color: #151515;
+            color: white;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 50px;
+        }
+        
+        #sanpham{
+            height: 420px;
+            text-align: center;
+        }
+        #phukien{
+             height: 420px;
+            text-align: center;
+        }
+        #quanao{
+            height: 420px;
+            text-align: center;
+        }
+        .Nameone{
+         display: inline-block;
+        }
+        #Name{
+        
+            height: 50px;
+            width: 300px;
+                border-bottom: 2px solid #F8CA00;
+            text-align: center;
+            line-height: 50px;
+            
+        }
+        #parent{
+            width: 300px;
+            height: 300px;
+            padding: 5px;
+           
+            position: relative;
+        }
+        #parent:hover #child{
+            transform: translate(-50%,-50%) scale(1.15);
+          
+        }
+        #child{
+            width: 250px;
+            height: 250px;
+            background-color: indianred;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition: all 2s;
+        }
+       
+        #logoin{
+            position: relative;
+            background-color: #F8CA00;
+            width: 100%;
+            height: 200px;
+            float: left;
+        }
+        #logoon{
+             position: absolute;
+            top: 22px;
+             left: 0px;
+             float: left;
+        }
+         #logoon img{
+            
+            margin-left: 26px;
+            width: 22%;
+            height: 150px;
+                
+            background-color: #F8CA00;
+            
+        }
+        #home {
+            background-color: #343434;
+            width: 100%;
+            height: 500px;
+        }
+        #SUM{
+            margin-top:  50px;
+            margin-left: 40px;
+        }
+        .team{
+            width: 50px;
+            height: 50px;
+            
+            
+            
+        }
+        .teamsum p{
+            vertical-align: middle;
+            color: white;
+            font-size: 14px;
+        }
+        .teamsum img{
+            width: 60px;
+            height: 60px;
+           margin-right: 10px;
+            float: left;
+           
+        }
+        .teamsum{
+            width: 400px;
+            height: 400px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        #LOGO{
+            
+            margin: 50px 150px 0px 500px;
+        }
+        #LOGO img{
+            width: 100px;
+            height: 100px;
+            border-radius: 30%;
+           
+        }
+        span{
+            font-size: 20px;
+        }
+        #LOGO p{
+            color: white;
+            text-align: left;
+        }
+        #LOGO img,#LOGO p{
+             margin-top: 40px;
+            vertical-align: middle;
+            display: inline-block;
+            
+        }
+        #we{
+            width: 100%;
+            height: 300px;
+            background-color: #343434;
+            border-top: 1px solid white;
+        }
+        
+        #wes{
+            margin-top: 50px;
+            text-align: center;
+        }
+        #wess{
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+        #wesss{
+            font-size: 20px;
+            color: white;
+        }
+        #wedes{
+            margin-top: 40px;
+            margin-left: 400px;
+            
+        }
+        .wed{
+            height: 50px;
+            width: 500px;
+            padding-left: 10px;
+            text-align: center;
+        }
+        .weds{
+            height: 50px;
+            width: 50px;
+            border: none;
+            margin-left: -4px;
+            color: black;
+            background-color: #F8CA00;
+        }
+       #end{
+            width: 100%;
+            height: 200px;
+            background-color: #151515;
+/*            display: inline-block;*/
+            border-top: 1px solid white;
+          
+        }
+        #end div{
+            margin: 50px 10px;
+            float: left;
+        }
+
+        .endone{
+            text-align: center;
+            color: white;
+        }
+        
+        .twoo{
+            float: right;
+            color: white;
+            
+            display: inline-block;
+        }
+        
+        .twoo img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .endd{
+            text-decoration: none;
+        }
+        .endd h2:hover{
+            color: #F8CA00;
+        }
+
+      
+        
+        #left{
+            width: 13%;
+       float: left;
+            position: sticky;
+            top: 130px;;
+            border: 1px solid #ccc;
+           height: 505px; 
+            
+
+        }
+        #left img{
+            width: 100%;
+           height: 504px;  
+            
+        }
+        #center{ 
+            width: 65%;
+         float: left;
+            border: 1px solid #ccc;
+            margin-left: 20px;
+        }
+        #center p{ 
+            text-indent: 40px;
+        }
+        #center img{
+            width: 100%;;
+        }
+        #leftcenterright{
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            margin-left: 10px;
+
+        }
+        #right{
+            width: 17%;
+            border: 1px solid #ccc;
+            margin-left: 30px; 
+            float: left;
+            position: sticky;
+            top: 130px;
+            text-align: center
+        }
+        #right img{
+            width: 70px;
+            height: 70px;  
+            padding: 3px;
+            border: 1px solid #ccc;
+            
+        }
+           #right p{
+            width: 100%;
+            height: 30px;
+               background-color: black;
+               font-weight: bold;
+            padding: 3px;
+            border: 1px solid #ccc;
+               color: #f8ca00;
+                text-align: left;
+        }
+        #h4{
+            background-color: #F8CA00;
+            color: black;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 20px;
+        }
+        .p-center{
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+    <body>
+        <div id="sum">
+            <div id="header">
+                <p>Hỗ Trợ: 0962602113  </p>
+                <div>
+                <input type="text" class="one">
+                <button type="button" class="one ones" ><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <a href="#" id="one">Đăng Nhập</a>
+            </div>
+            </div>
+            <div id="hedertop">
+                <img src="./img/Logo.png">
+                <ul>
+                    <li><a href="index.html" class="supperq">Trang Chủ</a></li>
+                    <li><a href="#" class="supperq">Sản Phẩm</a>
+                        <ul>
+                             <li><a href="Winner.html">Winner</a></li>
+                            <li><a href="Exciter.html">Exciter</a></li>
+                            <li><a href="zoomer.html">Zoomer</a></li>
+                            <li><a href="rader.html">Raider</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <a href="#" class="supperq">Phụ Kiện - Linh Kiện</a>
+                        <ul>
+                            <li><a href="Tay%20Th%E1%BA%AFng%20Brembo.html">Tay Thắng Brembo</a></li>
+                            <li><a href="Phu%E1%BB%99c%20Ohlin.html">Phuộc Ohlin</a></li>
+                           
+                            <li><a href="vo-xe.html">Vỏ Xe Michenlin</a></li>
+                            <li><a href="heodau.html">Heo Dầu Brembo</a></li>
+                        </ul>
+                        </li>
+                    <li><a href="#" class="supperq">Công Nghệ</a></li>
+                    <li><a href="quanao.html" class="supperq">Quần Áo</a></li>
+                    <li><a href="#" class="supperq">Tin Tức</a></li>
+                    <li><a href="#" class="supperq">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </div>
+            <img id="img" src="./img/Capture.PNG">
+        
+        
+        <div id="abc">
+            
+            
+            
+            
+            <div id="Slide">
+                <img src="img/1.jpg">
+                <img src="img/2.jpg">
+                <img src="img/3.jpg"> 
+                <img src="img/4.jpg"> 
+            </div>
+            <div id="TinTuc">
+                <h3>Tin Tức</h3>
+                <div class="onee all">
+                    <a href="#" ><img src="img/4478046_Cover_F1.jpg"></a>
+                    <a href="#"><p class="pcolor">Red Bull RB9: Ông vua cuối cùng của thời đại V8 công thức 1</p></a>
+                </div>
+                <div id="clear"></div>
+                <div  class="two all">
+                    <a href="#"> <img src="img/tintuc2.jpg"></a>
+                    <a href="#"><p class="pcolor">Chi tiết nền tảng Bosch eScooter system trên xe điện VinFast: khác biệt nhờ khả năng kết nối</p></a>
+                </div>
+                   <div id="clear"></div>
+                <div class="three all">
+                    <a href="#"><img src="img/tintuc3.jpg"></a>
+                    <a href="#"><p class="pcolor">[#ReviewXe] Sh300i - Ông hoàng đường phố đích thực</p></a>
+                </div>
+                <div id="clear"></div>
+                <div class="four all">
+                    <a href="#"><img src="img/tintuc4.jpg"></a>
+                    <a href="#"><p class="pcolor">[QC] Honda thổi bùng lửa đam mê tại Triển lãm EICMA 2018</p></a>
+                </div>
+                
+            </div>
+            <div id="clear"></div>
+            
+        </div>
+        
+        <div>
+            
+        </div>
+<div id="leftcenterright">
+                 <div id="left">
+                    <img src="Winner/banner.jpg">
+                </div>
+                
+                
+                <div id="center">
+                    <h4 id="h4">Chi tiết mẫu Honda Winner 150 độ gây sốt cộng đồng chơi xe Việt Nam</h4>
+                    <p>Mới đây một đại lý Honda có tiếng tại Bình Dương vừa mới trình làng mẫu Honda Winner 150 độ có phong cách của một chiếc xe đua thể thao với điểm nhấn đặc biệt đến từ một số phụ tùng đồ chơi của những mẫu xe mô tô phân khối lớn, đây được xem là một "siêu phẩm" và gây sốt cộng đồng chơi xe Việt Nam trong thời gian qua.</p>
+                    <img src="Winner/1.JPG">
+                    <p class="p-center">Chi tiết mẫu Honda Winner 150 độ gây sốt cộng đồng chơi xe Việt Nam.</p>
+                    <p>
+                        Để chuẩn bị cho một vài sự kiện lớn sắp được diễn ra trong thời gian tới, đại lý Honda An Thành tại Bình Dương vừa trình làng mẫu Honda Winner độ có phong cách của một chiếc xe đua thể thao với điểm nhấn đặc biệt đến từ một số phụ tùng đồ chơi của những mẫu xe mô tô phân khối lớn. Toàn bộ bản độ này được thực hiện bởi anh Phú Quang với chi phí thực hiện rất cao, do đang trong giai đoạn gấp rút hoàn thiện nên đến nay anh vẫn chưa tổng hợp được chi phí cụ thể, chỉ có thể ước tính vào khoảng vài trăm triệu Đồng.
+
+Chia sẻ về bản độ, anh Quang cho hay chiếc Winner độ được thực hiện dựa theo phong cách của những chiếc xe đua thể thao, tuy nhiên do muốn giữ lại "phần hồn" của một chiếc xe Winner nên về thiết kế tổng thể của chiếc xe độ không có nhiều thay đổi so với nguyên bản, chỉ được chế mũ lại ở một số chi tiết như mặt nạ trước, phần trên ở đuôi sau với bộ yên solo, phần mỏ cày dưới động cơ... dàn đầu xe với chóa đèn pha LED đầy hiên đại nguyên bản đã được thay thế bằng dàn đầu mới được lấy từ mẫu xe tay ga Honda Icon. Bên cạnh đó chiếc Honda Winner độ siêu chất này còn vô cùng nổi bật khi khoe thân trong một bộ cánh với tông màu Trắng-Đỏ-Cam đặc trưng của đội đua Repsol Honda Team.
+                    </p>
+                    <img src="Winner/2.jpg">
+                    <p class="p-center">Honda Winner độ có phong cách của một chiếc xe đua thể thao với điểm nhấn đặc biệt đến từ một số phụ tùng đồ chơi của những mẫu xe mô tô phân khối lớn.</p>
+                    <p>
+                    
+                        Không chỉ thế dàn đầu xe cũng trở nên chất hơn khi được tích hợp rất nhiều phụ tùng đồ chơi hàng hiệu như bộ cùm phanh dầu Brembo RCS 19 và cùm côn dầu Brembo RCS 16, cả 2 bộ cùm được che chắn bởi bộ càng bảo vệ tay thắng từ Bonamici Racing, cùng với đó là bình dầu CNC từ thương hiệu AEM Racing. Ngoài ra, xe còn được trang bị 3 bộ cùm công tắc với 2 cái từ GP và 1 cái của Daytona, bên cạnh đồng hồ hiển thị chính là Koso RX2N thì chiếc Winner độ còn trang bị thêm 3 bộ đồng hồ khác ở vị trí lườn giữa thân xe với các công dụng như điều chỉnh xăng gió điện tử, đo vòng tua máy (rpm)...
+
+Dàn chân trên chiếc Winner này chính là điểm nhấn tạo nên sự chú ý đặc biệt cho chiếc xe độ, với dàn chân trước được trang bị cặp phuộc Upside-down Showa với đường kính 43 mm cùng bộ chảng 3 được lấy từ mẫu siêu mô tô Kawasaki Ninja ZX-10R, hệ thống phanh trước cũng được nâng cấp với cặp đĩa phanh size 330 mm từ Brembo cùng với đó là cặp heo dầu Brembo GP4RX, hệ thống phanh sau cũng đuợc nâng cấp với bộ heo dầu Brembo Billet 2 pis đối xứng cùng đĩa phanh Braketech loại Full-floating thường chỉ được trên những chiếc xe đua mô tô cao cấp.
+                    </p>
+                    <img src="Winner/3.JPG">
+                    <p class="p-center">Dàn chân trước cực chất với loạt phụ tùng đồ chơi hàng hiệu từ xe mô tô phân khối lớn.</p>
+                    <p>
+                        Ấn tượng nhất có lẻ đến từ cặp vành hợp kim với trọng lượng siêu nhẹ chỉ 2 kg được lấy từ chiếc Ducati 1199 S Panigale có giá 42 triệu đồng cùng với đó là cặp lốp Pirelli Diablo Superbike trị giá gần 40 triệu Đồng. Hệ thống treo sau đuợc trang bị phuộc Ohlins bình dầu rời chuyên dùng cho chiếc Exciter 150, cùng bộ gắp đơn của chiếc Honda NSR150 hay còn được biết đến với cái tên quen thuộc gắp N. Hệ thống truyền động cũng đã được nâng cấp với bộ dây Curoa để thay thế cho bộ sên xích thông thường. Anh Quang cho biết việc gắn dàn chân này lên chiếc xe gặp rất nhiều khó khăn, để có thể di chuyển được trên đường phố nhưng vẫn đảm bảo được tính an toàn đòi hỏi rất nhiều thời gian và công sức.
+
+Về sức mạnh, chiếc Honda Winner độ cũng đã được nâng cấp khi được trang bị piston lớn hơn với đường kính 62 mm tăng thêm gần 5 mm so với nguyên bản, làm cho dung tích của xe tăng lên gần 175 cc theo lý thuyết, hệ thống tản nhiệt bằng chất lỏng cũng được nâng cấp với bộ két nước lớn hơn lấy từ chiếc Honda CBR150R. Cùng với đó là hệ thống ống xả được lấy từ mẫu siêu mô tô thể thao CBR1000RR khiến cho chiếc xe độ thêm phần hầm hố.
+                    </p>
+                    <img src="Winner/4.JPG">
+                    <p class="p-center">Khối động cơ trên chiếc Winner độ này được nâng cấp lên đến gần 175 phân khối theo lý thuyết.
+                    </p>
+                    <p>
+                        Bên cạnh đó chiếc Winner độ còn được trang bị một số đồ chơi đắt giá khác như bộ gác chân Lightech, hệ thống ổ khoá thông minh Honda Smartkey, cùng với đó là bộ ốc Titanium đầy giá trị phủ khắp xe. Và với bộ trợ lực Ohlins gắn ở vị trí khung sườn kết nối cùng bộ chảng 3 sẽ giúp cho chiếc xe trở nên ổn định hơn khi chạy ở tốc độ cao.
+
+Mời các bạn cùng xem qua bộ ảnh chi tiết của chiếc Honda Winner độ gây sốt cộng đồng chơi xe thời gian qua:
+                    </p>
+                    <img src="Winner/5.JPG">
+                    <img src="Winner/6.JPG">
+                    <img src="Winner/7.JPG">
+                    <img src="Winner/8.JPG">
+                    <p class="p-center">Chiếc Honda Winner độ khoe thân trong một diện mạo đầy nổi bật với một bộ cánh có tông màu Trắng-Đỏ-Cam đặc trưng của đội đua Repsol Honda Team.</p>
+                    <img src="Winner/9.JPG">
+                    <p class="p-center">Dàn mặt nạ trước của xe đã được chế mũ lại che đi một phần đèn demi làm cho chiếc xe trở nên "ngầu" và phong cách hơn khi so với nguyên bản.</p>
+                    <img src="Winner/10.JPG">
+                    <p class="p-center">Để tạo nên phong cách đua, chiếc Winner độ đã bỏ đi bộ đèn pha nguyên bản và thay vào đó là dàn đầu của mẫu tay ga Honda Icon.</p>
+                    <img src="Winner/11.JPG">
+                    <p class="p-center">Xe được trang bị cùm phanh dầu Brembo RCS 19.</p>
+                    <img src="Winner/12.JPG">
+                    <p class="p-center">Với sự hỗ trợ từ bình dầu AEM Racing</p>
+                    <img src="Winner/13.JPG">
+                    <p class="p-center">Phía bên trái tay lái là cùm côn dầu Brembo RCS 16 và cặp càng bảo vệ tay thắng Bonamici Racing</p>
+                    <img src="Winner/14.JPG">
+                    <p class="p-center">Đồng hồ chính Koso RX2N</p>
+                    <img src="Winner/15.JPG">
+                     <p class="p-center">Chiếc Winner độ còn trang bị thêm 3 bộ đồng hồ khác ở vị trí lườn giữa thân xe với các công dụng như điều chỉnh xăng gió điện tử, đo vòng tua máy (rpm)...</p>
+                    <img src="Winner/16.JPG">
+                    <img src="Winner/17.JPG">
+                    <p class="p-center">Xe còn được trang bị 3 bộ cùm công tắc với 2 cái từ GP và 1 cái của Daytona</p>
+                    <img src="Winner/18.JPG">
+                    <p class="p-center">Cùm tăng tốc Domino</p>
+                    <img src="Winner/19.JPG">
+                    <p class="p-center">Dàn chân trước được trang bị cặp phuộc Upside-down Showa với đường kính 43 mm cùng bộ chảng 3 được lấy từ mẫu siêu mô tô Kawasaki Ninja ZX-10R</p>
+                    <img src="Winner/20.JPG">
+                    <img src="Winner/21.JPG">
+                    <p class="p-center">Hệ thống phanh trước cũng được nâng cấp với cặp đĩa phanh size 330 mm từ Brembo cùng với đó là cặp heo dầu Brembo GP4RX</p>
+                    <img src="Winner/22.JPG">
+                    <p class="p-center">Trợ lực Ohlins gắn ở vị trí khung sườn kết nối cùng bộ chảng 3 sẽ giúp cho chiếc xe trở nên ổn định hơn khi chạy ở tốc độ cao.</p>
+                    <img src="Winner/23.JPG">
+                    <p class="p-center">Bộ gác chân Lightech trị giá gần 15 triệu Đồng</p>
+                    <img src="Winner/24.JPG">
+                    <p class="p-center">Phuộc sau Ohlins bình dầu rời của Exciter 150.</p>
+                    <img src="Winner/25.JPG">
+                    <p class="p-center">Hệ thống treo sau từ bộ gắp đơn của chiếc Honda NSR150 hay còn được biết đến với cái tên quen thuộc gắp N.</p>
+                    <img src="Winner/26.JPG">
+                    <p class="p-center">Ốp đĩa tải CNC được phay bằng tay vô cùng tinh tế.</p>
+                    <img src="Winner/27.JPG">
+                    <img src="Winner/28.JPG">
+                    <p class="p-center">Hệ thống ống xả được lấy từ mẫu siêu mô tô thể thao CBR1000RR khiến cho chiếc xe độ thêm phần hầm hố.</p>
+                     <img src="Winner/29.JPG">
+                    <p class="p-center">Dàn yên xe solo với tạo hình phần đuôi sau tương tự như những chiếc xe đua.</p>
+                    <img src="Winner/30.JPG">
+                    <img src="Winner/31.JPG">
+                    <p class="p-center">Ấn tượng nhất có lẻ đến từ cặp vành hợp kim với trọng lượng siêu nhẹ chỉ 2 kg được lấy từ chiếc Ducati 1199 S Panigale có giá 42 triệu đồng</p>
+                    <img src="Winner/31.JPG">
+                    <p class="p-center">Cùng cặp lốp Pirelli Diablo Superbike trị giá gần 40 triệu Đồng
+                    </p>
+                   
+                    <img src="Winner/32.JPG">
+                    <p class="p-center"> Hệ thống phanh sau cũng đuợc nâng cấp với bộ heo dầu Brembo Billet 2 pis đối xứng cùng đĩa phanh Braketech loại Full-floating thường chỉ được trên những chiếc xe đua mô tô cao cấp.
+                    </p>
+                    <img src="Winner/33.JPG">
+                    <p class="p-center">Chi tiết động cơ với một số option đầy nổi bật.
+                    </p>
+                    
+                    <img src="Winner/35.JPG">
+                    <img src="Winner/36.1.JPG">
+                    <img src="Winner/36.JPG">
+                    <img src="Winner/37.JPG">
+                    <p class="p-center">Chi tiết mẫu Honda Winner 150 độ gây sốt cộng đồng chơi xe Việt Nam</p>
+                </div>
+                
+                <div id="right">
+                    <p>Danh Mục Phục Tùng Xe</p>
+                    <img src="logo/01.png">
+                    <img src="logo/02.png">
+                    <img src="logo/03.png">
+                    <img src="logo/04.png">
+                    <img src="logo/05.png">
+                    <img src="logo/06.png">
+                    <img src="logo/07.png">
+                    <img src="logo/08.png">
+                    <img src="logo/09.png">
+                    <img src="logo/10.png">
+                    <img src="logo/11.png">
+                    <img src="logo/12.png">
+                    <p>Nhãn Hàng Bán Chạy</p>
+                    <img src="logo/a.jpg">
+                    <img src="logo/a1.jpg">
+                    <img src="logo/a2.png">
+                    <img src="logo/a3.jpg">
+                    <img src="logo/a4.jpg">
+                    <img src="logo/a5.jpg">
+                    
+                </div>
+               
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div id="logoin">
+            <div id="logoon">
+                <img src="img/lg1.jpg">
+                <img src="img/lo2.jpg">
+                <img src="img/l3.jpg">
+                <img src="img/021413-yamaha-revs-your-heart.jpg">
+            </div>
+        </div>
+        <div id="home">
+                <div id="LOGO">
+                <img src="img/Logo.png" class="team">
+                <p> <span>Công Ty  Được Thành Lập Từ năm 1999-2018</span> <br>
+Trải quan nhiều gia đôạn khó khăn đường đầu với thử thách và tồn tài <br>đến ngày hôm nay là một sự thành công vượt bậc</p>
+                </div>
+            <div id="clear"></div>
+            <div id="SUM">
+                <div class="teamsum">
+                    <img src="https://hondaxemay.com.vn/wp-content/themes/honda/assets/images/img/out-link-3-2.png" class="team">
+                    <p>ĐỘI NGŨ NHÂN VIÊN<br>
+Đội ngũ nhân viên được tuyển chọn kỹ lưỡng và được đào tạo các kỹ năng chuyên nghiệp cao.</p>
+                </div>
+                <div class="teamsum">
+                    <img src="https://hondaxemay.com.vn/wp-content/themes/honda/assets/images/img/out-link-2-2.png" class="team">
+                    <p>ĐỘI NGŨ SỮA CHỮA<br>
+Đội ngũ nhân viên được tuyển chọn kỹ lưỡng và được đào tạo các kỹ năng chuyên nghiệp cao.</p>
+                </div>
+                <div class="teamsum">
+                    <img src="img/out-link-1-2.png" class="team">
+                    <p>HỖ TRỢ VÀ CHĂM SÓC KHÁCH HÀNG<br>
+Đội ngũ chăm sóc khách hàng tận tình và chuyên nghiệp cao.</p>
+                </div>
+<!--
+                <div class="teamsum">
+                    <img src="img/out-link-1-2.png" class="team">
+                    <p>HỖ TRỢ VÀ CHĂM SÓC KHÁCH HÀNG
+Đội ngũ chăm sóc khách hàng tận tình và chuyên nghiệp cao.</p>
+                </div>
+-->
+            </div>
+        </div>
+        <div id="we">
+            <div id="wes">
+                <p id="wess">Chúng Tôi Ở Đây Là Vì Các Bạn</p>
+                <p id="wesss">Bạn hãy để lại email để bạn được cập nhật thông tin mới về SuperQ</p>
+            </div>
+            <div id="wedes">
+                <input type="text" class="wed" placeholder="Email">
+                <button type="button" class="weds" ><i class="fa fa-search" aria-hidden="true"></i></button>
+                   
+            </div>
+        </div>
+        <div id="end">
+            <div class="endone twoo">
+                <p>SuperQ<br>
+ Phân Phối Xe - Phụ Kiện Nhập Khẩu - Các Trang Thiết Bị Hiện Đại - Quần Áo Chính Hãng
+                <br>Copyright © 2018 - SuperQ
+                </p>
+            </div>
+            <div class="endtwo twoo">
+                <p>
+                Tel: 0962602113<br>
+
+Fax: (028) 11.222.333<br>
+
+Email: SuperQ@gmail.com</p>
+            </div>
+              <div class="endtwo twoo">
+               <img src="face.png">
+                  <img src="img/youe.png">
+                  <img src="img/google.png">
+            </div>   
+        </div>
+    </body>
+</html>
